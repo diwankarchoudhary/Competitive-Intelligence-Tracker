@@ -1,7 +1,8 @@
-const BASE_URL = "http://127.0.0.1:8000";
+const API_BASE = "https://competitive-intelligence-tracker.onrender.com";
+
 
 export async function apiGet(path: string) {
-  const url = `${BASE_URL}${path}`;
+  const url = `${API_BASE}${path}`;
   console.log("GET:", url);
 
   const res = await fetch(url, {
@@ -19,7 +20,7 @@ export async function apiGet(path: string) {
 }
 
 export async function apiPost(path: string) {
-  const url = `${BASE_URL}${path}`;
+  const url = `${API_BASE}${path}`;
   console.log("POST:", url);
 
   const res = await fetch(url, {
